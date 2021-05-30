@@ -1,0 +1,41 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+        section#introsection 
+            div Welcome to Puru's dance academy 
+            div.small Eat Sleep Dance Repeat 
+        section#ourmission 
+            h1 Our mission 
+            div.card 
+                h3 Dance perfection 
+                div.card-box
+                    div.card-img 
+                        img(src="/static/logo1.png", alt="logo")
+                    div.card-content 
+                        p This is the best dance academy in alwar
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img 
+                        img(src="/static/logo2.png", alt="logo")
+                    div.card-content 
+                        p You can learn any dance form here
+            div.card
+                h3 Expert teaching
+                div.card-box
+                    div.card-img 
+                        img(src="/static/logo3.png", alt="logo")
+                    div.card-content 
+                        p We have appointed best dancers as dance teaching
+        section#oursponsors 
+            h1 Our sponsers 
+            img(src="/static/sponser2.png", alt="our sponsers", class="spclass") 
+            img(src="/static/sponser3.png", alt="our sponsers", class="spclass") 
+            img(src="/static/sponser4.png", alt="our sponsers", class="spclass") 
